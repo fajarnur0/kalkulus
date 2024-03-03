@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudut Antara Dua Vektor</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- BODY -->
+  <body style="background-image: url(gambar/background_web.avif);"> 
+    <!-- CONTAINER -->
+    <div class="container mx-auto">
+      <div class="card mt-3" style="height: 600px; box-shadow:black;" >
+        <!-- BAGIAN HEADER CARD-->
+        <div class="card-header" style="background-color: #008080; border: solid 2px;">
+          <h2 id="judul" style="text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif; color: beige;">Menghitung Sudut Antara Dua Vektor</h1>
+        </div>
+        <!-- BAGIAN BODY CARD -->
+        <div class="card-body" style="border: solid gray 1px; background-color: whitesmoke;">
+          <div class="row" style="margin-left: 50px;"> 
+            <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Masukan koordinat vektor!</h4>
+            <!-- VEKTOR KE SATU -->
+            <div class="label">
+              <label for="vektor1" style="background-color: #2e808b; color: aliceblue;margin-top: 10px; margin-bottom: 5px; border: solid black 2px;">Vektor 1 :</label>
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="x1" placeholder="i">
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="y1" placeholder="j">
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="z1" placeholder="k">
+            </div>
+            <!-- VEKTOR KE DUA -->
+            <div class="label">
+              <label for="vektor2" style="background-color: #2e808b; color: aliceblue; margin-top: 23px; margin-bottom: 5px; border: solid black 2px; ">Vektor 2 :</label>
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="x2" placeholder="i">
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="y2" placeholder="j">
+            </div>
+            <div class="col">
+              <input type="number" name="vektor1" id="z2" placeholder="k">
+            </div>
+          </div>
+          <!-- BUTTON -->
+          <div style="margin-left: 70px;">
+            <br>
+            <button onclick="cekInput()" class="btn btn-primary">Hitung</button>
+            <button onclick="reset()" class="btn btn-secondary">Reset</button>
+            <a href="https://www.google.com/" style="color: white;""><button class="btn btn-secondary">Keluar</button></a>
+            <button onclick="simpan()" class="btn btn-secondary">Simpan</button>
+            <button onclick="tampil()" class="btn btn-secondary">Tampil</button>
+            <button onclick="hapus()" class="btn btn-secondary">Hapus</button>
+            <br><br>
+            <!-- HASIL -->
+            <div>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large;">Hasil :</p>
+              <p id="hasil" style="font-size: medium; font-weight: bold;"></p>
+              <p id="cek" style="color: red; font-size: large; font-weight: bold;"></p>
+            </div>
+            <br>
+            <div style="margin-top: 30px;">
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large;">Tampil :</p>
+              <p id="tampil" style="font-size: medium; font-weight: bold;"></p>
+            </div>
+          </div>
+        </div>
+        <!-- BAGIAN FOOTER -->
+        <div class="card-footer border-success text-center" style="background-color: #2e8b74;">
+          <footer>
+            <ul style="list-style: none;">
+              <li style="display: inline-block; font-size: small; margin: 5px; color: aliceblue;"><a href="https://www.instagram.com/fajarn.ur/" target="_blank"><img src="gambar/Instagram_icon.png" style="height: 50px; width: 50px;"></a><br>Fajar's instagram</li>
+              <!-- <li style="display: inline-block; font-size: small; margin: 5px; color: aliceblue;"><a href="https://www.instagram.com/kii_gani/" target="_blank"><img src="gambar/Instagram_icon.png" style="height: 50px; width: 50px;"></a><br>Gani's instagram</li> -->
+              <li style="margin-bottom: -25px; color: bisque;">&copy2023 Fajarnur</li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
